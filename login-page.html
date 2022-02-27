@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Fatemeh Rashidi">
+        <meta name="keyword" content="login, username, password">
+        <meta name="description" content="login page">
+        
+        <style>
+
+            div#parent {
+                height: 570px;
+                margin: 0px;
+                padding: 0px;
+                background-color: rgb(228, 0, 140);
+                background-image: linear-gradient(rgb(228, 0, 140), rgb(4, 4, 223));
+                
+            }
+            div#child {
+                background-color: white;
+                height: 475px;
+                width: 300px;
+                text-align: center;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                
+            }
+            h3#login {
+                color: black;
+                text-align: center;
+                position: relative;
+                top: 40px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            input#email {
+                height: 40px;
+                width: 215px;
+                background-color: rgb(230, 230, 230);
+                direction: ltr;
+                color: rgb(134, 132, 132);
+                border-width: 0px;
+                position: relative;
+                top: 50px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            input#password {
+                height: 40px;
+                width: 215px;
+                background-color: rgb(230, 230, 230);
+                direction: ltr;
+                color: rgb(134, 132, 132);
+                border-width: 0px;
+                position: relative;
+                top: 60px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            input#remember {
+                position: relative;
+                top: 70px;
+                left: -62px;
+
+            }
+            label#label {
+                color: gray;
+                font-size: 12px;
+                font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                direction: ltr;
+                text-align: left;
+                position: relative;
+                left: -62px;
+                top: 67px;
+            }
+            button#button {
+                color: white;
+                background-color: rgb(218, 7, 137);
+                text-align: center;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                position: relative;
+                top: 83px;
+                height: 40px;
+                width: 215px;
+                margin: 10px;
+                border: 0px;
+            }
+            p#alternative {
+                color: gray;
+                font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                text-align: center;
+                position: relative;
+                top: 95px;
+                font-size: 13px;
+            }
+            button#facebook {
+                height: 24px;
+                width: 100px;
+                background-color: white;
+                color: rgb(60, 60, 187);
+                direction: ltr;
+                margin-left: 15px;
+                margin-right: 15px;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                position: relative;
+                top: 80px;
+                left: 0px;
+                margin: 10px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: gray;
+                font-size: 10px;
+                display: inline;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            img#facebook-logo {
+                width: 12px;
+                position: relative;
+                top: 2px;
+            }
+            button#google {
+                height: 24px;
+                width: 100px;
+                background-color: white;
+                color: rgb(0, 0, 0);
+                direction: ltr;
+                margin-left: 15px;
+                margin-right: 15px;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                position: relative;
+                top: 80px;
+                left: 0px;
+                margin: 10px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: gray;
+                font-size: 10px;
+                display: inline;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            img#goolge-logo {
+                width: 12px;
+                position: relative;
+                top: 2px;
+            }
+            p#not-member {
+                text-align: center;
+                font-size: 12px;
+                color: gray;
+                position: relative;
+                top: 120px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            a#sign-up {
+                color: gray;   
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="parent">
+            <div id="child">
+                <h3 id="login"><b> LOGIN </b></h3>
+                <input id="email" type="text" placeholder="  📧  Email">
+                <input id="password" type="password" placeholder="  🔒  &#9679&#9679&#9679&#9679&#9679&#9679&#9679&#9679"><br/>
+                <input id="remember" type="checkbox" checked>
+                <label id="label" for="remember"> Remember me </label><br/>
+                <button id="button"> LOGIN </button>
+                <p id="alternative"> Or login with </p>
+                <button id="facebook"> <img src="facebook.png" id="facebook-logo"> <b>Facebook</b> </button>
+                <button id="google"> <img src="gmail.png" id="goolge-logo"> <b>Google</b> </button>
+                <p id="not-member"> Not a member? <a id="sign-up" href="https://www.instagram.com"> Sign up now </a> </p>
+            </div>
+        </div>
+    </body>
+</html>
